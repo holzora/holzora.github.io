@@ -12,8 +12,23 @@
         text-align: center
         }
 </style>
+<script language="javascript">
+    function catalog(){
+      var url=new Array();
+      url[0]="index.html";
+      url[1]="d/";
+      url[2]="d/l/";
+      url[3]="d/l/n/";
+      url[4]="d/l/n/i/";
+      url[5]="d/l/n/i/h/";
+      url[6]="d/l/n/i/h/e/";
+      var ints=parseInt(Math.random()*(url.length));
+      window.open(url[ints]);//本窗口打开     
+      //window.location=url[ints];//新窗口打开 
+     }
+</script>
 <body>
-    <h2>歌曲目录</h2>
+    <h2><a href="javascript:catalog()" title="点击随机播放下列歌曲">歌曲目录</a></h2>
     <h3><a href="index.html">Patema inverse</a></h3>
     <h3><a href="d/">Ein kleines lied</a></h3>
     <h3><a href="d/l/">You are beautiful</a></h3>
