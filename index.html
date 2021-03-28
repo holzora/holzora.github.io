@@ -14,18 +14,22 @@
 body{
     text-align: center
     }
+.user-input {
+    width: 400px;
+     height: 40px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    text-indent: 10px;
+    }
 </style>
 <body>
     <h1>星空小栈</h1>
     <span><a href="html/catalog.html" target="_blank">音乐</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span>博客</span>
     <form action="http://baidu.com/s" method="get">
-        <div>
-             <label for="search"></label>
-             <input name="wd" id="search" value="">
-        </div>
-        <div>
-             <button>搜索</button>
-        </div>
+        <label for="search"></label>
+        <input class="user-input" type="text" name="wd" id="search" placeholder="请输入搜索关键词">
     </form>
 </body>
 </html>
