@@ -41,6 +41,13 @@ input::-webkit-input-placeholder{ text-align: center; }
 a:link { color:#0000FF; }
 a:visited { color:#0000FF; }
 script{display: none !important;}
+#btn{
+    width: 80px;
+    height: auto;
+    background-color: #fff;
+    border: none;
+    outline: 0;
+    }
 </style>
 <script type="text/javascript">  
     function disptime(){  
@@ -71,8 +78,20 @@ script{display: none !important;}
        document.write(d.getFullYear() + "年" +(d.getMonth() + 1) + "月" + d.getDate() + "日");
        document.write(' 星期'+'日一二三四五六'.charAt(new Date().getDay()));
     </SCRIPT>
-    <div id="myclock"></div>  
-    <span id="runtime_span" style="display: none;"></span>
+    <div>
+    <button id="btn"><div id="myclock"></div></button>
+    </div>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function() {
+            $("#main").toggle();
+            });
+        });
+    </script>
+    <div id="main" style="display: none;">
+    <span id="runtime_span"></span>
+    </div>
     <script type="text/javascript">function show_runtime(){window.setTimeout("show_runtime()",1000);X=new 
         Date("03/30/2021 00:00:00");
         Y=new Date();T=(Y.getTime()-X.getTime());M=24*60*60*1000;
