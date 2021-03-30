@@ -7,7 +7,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <title>星空小栈</title>
+    <title>星空小栈</title><!-- 欢迎光临个人导航网站 -->
     <link rel='icon' href='image/title.ico' type='image/x-ico'>
     <script>
         var _hmt = _hmt || [];
@@ -72,5 +72,12 @@ script{display: none !important;}
        document.write(' 星期'+'日一二三四五六'.charAt(new Date().getDay()));
     </SCRIPT>
     <div id="myclock"></div>  
+    <span id="runtime_span" style="display: none;"></span>
+    <script type="text/javascript">function show_runtime(){window.setTimeout("show_runtime()",1000);X=new 
+        Date("03/30/2021 00:00:00");
+        Y=new Date();T=(Y.getTime()-X.getTime());M=24*60*60*1000;
+        a=T/M;A=Math.floor(a);b=(a-A)*24;B=Math.floor(b);c=(b-B)*60;C=Math.floor((b-B)*60);D=Math.floor((c-C)*60);
+        runtime_span.innerHTML="本站运行: "+A+"天"+B+"小时"+C+"分"+D+"秒"}show_runtime();
+    </script>
 </body>
 </html>
