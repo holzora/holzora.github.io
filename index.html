@@ -80,11 +80,23 @@ li{
 li:hover{
     background: #ccc;
     }
+.d1{
+    margin-top: 100px;
+    }
+.d2{
+    margin-top: 30px;
+    }
+.d3{
+    margin-top: 100px;
+    }
 .wrapper {
     position: absolute;
     transform:translate(-50%,-50%);
     left: 50%;
-    top: 35%;
+    top: 38%;
+    }
+.d4{
+    margin-top: 50px;
     }
 </style>
 <script type="text/javascript">  
@@ -100,11 +112,11 @@ li:hover{
     var mytime = setInterval("disptime()",1000);  
 </script>  
 <body onload="disptime()">
-    <br><br><br>
+    <div class="d1">
     <h1><a href="https://holzora.top/" style="color:black;text-decoration:none;">星空小栈</a></h1>
-    <br><br>
+    <div class="d2">
     <span><a href="html/catalog.html">音乐</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="http://m.sizhicn.com/bookcase.php" target="_blank">小说</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="https://ddrk.me/" target="_blank">电影</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="https://www.pixiv.net/"target="_blank">插画</a></span>
-    <br><br><br><br><br>
+    </div>
     <div class="wrapper">
     <form  action="http://baidu.com/s" target="_blank" method="get">
         <input type="text" name="wd" id="search" placeholder="请输入关键词搜索">
@@ -112,16 +124,18 @@ li:hover{
     <ul id="ul">
     </ul>
     </div>
-    <br><br>
+    <div class="d3">
     <span><a href="https://bbs.nga.cn/" target="_blank">nga</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="https://keylol.com/" target="_blank">keylol</a></span>
-    <br><br><br><br>
+    </div>
+    <div class="d4">
     <SCRIPT>
         var d = new Date();
        document.write(d.getFullYear() + "年" +(d.getMonth() + 1) + "月" + d.getDate() + "日");
        document.write(' 星期'+'日一二三四五六'.charAt(new Date().getDay()));
     </SCRIPT>
     <div>
-    <button id="btn"><div id="myclock"></div></button>
+    <button id="btn"><div id="myclock"></div>
+    </button>
     </div>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script>
