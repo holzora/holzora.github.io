@@ -7,21 +7,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <title>星空小栈</title>
-    <!-- 
-    欢迎光临个人导航网站！
-    有事请联系邮箱：holzora@foxmail.com 
-    -->
-    <link rel='icon' href='image/title.ico' type='image/x-ico'>
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?8be43ebecbd8a2ea29801a4997c95208";
-          var s = document.getElementsByTagName("script")[0]; 
-          s.parentNode.insertBefore(hm, s);
-        })();
-        </script>        
+    <title>demo</title>
 </head>
 <style>
 body{
@@ -92,15 +78,15 @@ li:hover{
         var ss = today.getSeconds();  
         document.getElementById("myclock").innerHTML="<p>"+hh+":"+mm+":"+ss+"</p>"  
           
-    }   
-    //setInterval（）
+    }
+
     var mytime = setInterval("disptime()",1000);  
 </script>  
 <body onload="disptime()">
     <br><br><br>
-    <h1><a href="https://holzora.top/" style="color:black;text-decoration:none;">星空小栈</a></h1>
+    <h1><a href="#" style="color:black;text-decoration:none;">demo</a></h1>
     <br>
-    <span><a href="html/catalog.html">音乐</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="http://m.sizhicn.com/bookcase.php" target="_blank">小说</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="https://ddrk.me/" target="_blank">电影</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="https://www.pixiv.net/"target="_blank">插画</a></span>
+    <span><a href="#">音乐</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="#" target="_blank">小说</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="#" target="_blank">电影</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="#"target="_blank">插画</a></span>
     <div class="wrapper">
     <form  action="http://baidu.com/s" target="_blank" method="get">
         <input type="text" name="wd" id="search" placeholder="请输入关键词搜索">
@@ -144,9 +130,6 @@ li:hover{
             var value = this.value;
             var oScript = document.createElement('script');
             oScript.src = 'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=' + value + '&cb=aa'
-            // 核心在这里，
-            // 1.实时获取参数 value
-            // 2.cb=返回值的处理函数（aa）
             document.body.appendChild(oScript)
         }
         function aa(data) {
@@ -163,31 +146,6 @@ li:hover{
             }
         }
     </script>
-    <script>
-        var input = document.getElementById('search')
-        var oUl = document.getElementById('ul')
-        input.onkeyup = function () {
-            var value = this.value;
-            var oScript = document.createElement('script');
-            oScript.src = 'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=' + value + '&cb=aa'
-            // 核心在这里，
-            // 1.实时获取参数 value
-            // 2.cb=返回值的处理函数（aa）
-            document.body.appendChild(oScript)
-        }
-        function aa(data) {
-            oUl.style.display = 'block';
-            var list = data.s;
-            var str = '';
-            if (list.length > 0) {
-                list.forEach(function (ele, index) {
-                    str += '<li><a href ="https://www.baidu.com/s?wd=' + ele + '" id="a2">' + ele + '</li>';
-                })
-                oUl.innerHTML = str;
-            } else {
-                oUl.style.display = 'none';
-            }
-        }
-    </script>
+
 </body>
 </html>
