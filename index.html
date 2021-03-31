@@ -54,50 +54,7 @@ script{display: none !important;}
     outline: 0;
     font-size:16.5px;
     }
-#a2{
-    display: inline-block;
-    width: 100%;
-    text-decoration: none;
-    color: rgb(0, 0, 0) ;
-    outline: none;
-    height: 30px;
-    line-height: 30px;
-    }
-#ul{
-    width: 250px;
-    border: 1px solid #ddd;
-    border-top: 0;
-    border-radius: 5px;
-    text-align: left;
-    background: #fff;
-    position: absolute;
-    left: 0;
-    top: 66px;
-    }
-li{
-    list-style: none;
-    }
-li:hover{
-    background: #ccc;
-    }
-.d1{
-    margin-top: 7%;
-    }
-.d2{
-    margin-top: 30px;
-    }
-.d3{
-    margin-top: 110px;
-    }
-.wrapper {
-    position: absolute;
-    transform:translate(-50%,-50%);
-    left: 50%;
-    top: 220px;
-    }
-.d4{
-    margin-top: 8%;
-    }
+    
 </style>
 <script type="text/javascript">  
     function disptime(){  
@@ -107,35 +64,29 @@ li:hover{
         var ss = today.getSeconds();  
         document.getElementById("myclock").innerHTML="<p>"+hh+":"+mm+":"+ss+"</p>"  
           
-    }   
-    //setInterval（）
+    }
+
     var mytime = setInterval("disptime()",1000);  
 </script>  
 <body onload="disptime()">
-    <div class="d1">
+    <br><br><br>
     <h1><a href="https://holzora.top/" style="color:black;text-decoration:none;">星空小栈</a></h1>
-    <div class="d2">
+    <br>
     <span><a href="html/catalog.html">音乐</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="http://m.sizhicn.com/bookcase.php" target="_blank">小说</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="https://ddrk.me/" target="_blank">电影</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="https://www.pixiv.net/"target="_blank">插画</a></span>
-    </div>
-    <div class="wrapper">
+    
     <form  action="http://baidu.com/s" target="_blank" method="get">
         <input type="text" name="wd" id="search" placeholder="请输入关键词搜索">
     </form>
-    <ul id="ul">
-    </ul>
-    </div>
-    <div class="d3">
+    <br>
     <span><a href="https://bbs.nga.cn/" target="_blank">nga</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="https://keylol.com/" target="_blank">keylol</a></span>
-    </div>
-    <div class="d4">
+    <br><br><br>
     <SCRIPT>
         var d = new Date();
        document.write(d.getFullYear() + "年" +(d.getMonth() + 1) + "月" + d.getDate() + "日");
        document.write(' 星期'+'日一二三四五六'.charAt(new Date().getDay()));
     </SCRIPT>
     <div>
-    <button id="btn"><div id="myclock"></div>
-    </button>
+    <button id="btn"><div id="myclock"></div></button>
     </div>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
     <script>
@@ -155,32 +106,7 @@ li:hover{
         a=T/M;A=Math.floor(a);b=(a-A)*24;B=Math.floor(b);c=(b-B)*60;C=Math.floor((b-B)*60);D=Math.floor((c-C)*60);
         runtime_span.innerHTML="本站已运行: "+A+"天"+B+"小时"+C+"分"+D+"秒"}show_runtime();
     </script>
-        <script>
-        var input = document.getElementById('search')
-        var oUl = document.getElementById('ul')
-        input.onkeyup = function () {
-            var value = this.value;
-            var oScript = document.createElement('script');
-            oScript.src = 'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=' + value + '&cb=aa'
-            // 核心在这里，
-            // 1.实时获取参数 value
-            // 2.cb=返回值的处理函数（aa）
-            document.body.appendChild(oScript)
-        }
-        function aa(data) {
-            oUl.style.display = 'block';
-            var list = data.s;
-            var str = '';
-            if (list.length > 0) {
-                list.forEach(function (ele, index) {
-                    str += '<li><a href ="https://www.baidu.com/s?wd=' + ele + '" id="a2">' + ele + '</li>';
-                })
-                oUl.innerHTML = str;
-            } else {
-                oUl.style.display = 'none';
-            }
-        }
-    </script>
+
 
 </body>
 </html>
