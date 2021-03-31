@@ -40,11 +40,16 @@ a{
     text-indent: none;
     margin-top:26px;
     }
-* {padding: 0;margin: 0;}
+* {padding: 0;margin: 0;list-style: none;}
 input::-ms-input-placeholder{ text-align: center; } 
 input::-webkit-input-placeholder{ text-align: center; }
-a:link { color:#0000FF; }
-a:visited { color:#0000FF; }
+a{
+    text-decoration: none;
+    color: #666;
+    }
+#a2{
+    color: blue;
+}
 script{display: none !important;}
 #btn{
     width: 80px;
@@ -54,7 +59,22 @@ script{display: none !important;}
     outline: 0;
     font-size:16.5px;
     }
-    
+ul{
+    display: none;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    margin: 0 auto;
+    overflow: auto;
+    }
+li{
+    text-align: left;
+    margin-left: 1px;
+    margin-top: 3px;
+    }
+.wrapper{
+    text-align: center;
+    }
 </style>
 <script type="text/javascript">  
     function disptime(){  
@@ -65,20 +85,22 @@ script{display: none !important;}
         document.getElementById("myclock").innerHTML="<p>"+hh+":"+mm+":"+ss+"</p>"  
           
     }
-
+    
     var mytime = setInterval("disptime()",1000);  
 </script>  
 <body onload="disptime()">
     <br><br><br>
     <h1><a href="https://holzora.top/" style="color:black;text-decoration:none;">星空小栈</a></h1>
     <br>
-    <span><a href="html/catalog.html">音乐</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="http://m.sizhicn.com/bookcase.php" target="_blank">小说</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="https://ddrk.me/" target="_blank">电影</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="https://www.pixiv.net/"target="_blank">插画</a></span>
-    
+    <span><a href="html/catalog.html" id="a2">音乐</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="http://m.sizhicn.com/bookcase.php" target="_blank" id="a2">小说</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="https://ddrk.me/" target="_blank" id="a2">电影</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="https://www.pixiv.net/"target="_blank" id="a2">插画</a></span>
+    <div class="wrapper">
     <form  action="http://baidu.com/s" target="_blank" method="get">
         <input type="text" name="wd" id="search" placeholder="请输入关键词搜索">
     </form>
+    <ul></ul>
+    </div>
     <br>
-    <span><a href="https://bbs.nga.cn/" target="_blank">nga</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="https://keylol.com/" target="_blank">keylol</a></span>
+    <span><a href="https://bbs.nga.cn/" target="_blank" id="a2">nga</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="https://keylol.com/" target="_blank" id="a2">keylol</a></span>
     <br><br><br>
     <SCRIPT>
         var d = new Date();
@@ -106,7 +128,34 @@ script{display: none !important;}
         a=T/M;A=Math.floor(a);b=(a-A)*24;B=Math.floor(b);c=(b-B)*60;C=Math.floor((b-B)*60);D=Math.floor((c-C)*60);
         runtime_span.innerHTML="本站已运行: "+A+"天"+B+"小时"+C+"分"+D+"秒"}show_runtime();
     </script>
-
-
+    <script>
+        function ds(data) {
+            console.log(data)
+        }
+        var oInput = document.getElementsByTagName("input")[0];
+        
+        oInput.oninput = function () {
+            var value = this.value;
+            var oScript = document.createElement("script");
+            oScript.src = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+ value +"&cb=doJson&_=1544270132010";
+            document.body.appendChild(oScript);
+            document.body.removeChild(oScript);
+        };
+        
+        function doJson(data) {
+            var s = data.s;
+            $("ul").empty();
+            if(s.length > 0){
+                s.forEach(function (ele,index) {
+                var a = $("<a></a>").attr("href","https://www.baidu.com/s?wd=" + ele);
+                a.text(ele);
+                $("<li></li>").append(a).appendTo($("ul"));
+                });
+                $("ul").css("display","block");
+            }else{
+                $("ul").css("display","none");
+            }
+        }
+    </script>
 </body>
 </html>
