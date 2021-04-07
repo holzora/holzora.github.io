@@ -1,4 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <meta http-equiv="refresh" content="0;url=https:holzora.top/index.html">
+    <script> 
+        function timeGo() {  
+            var sec = $(".countd-down p span").text();  
+            $(".countd-down p span").text(--sec);
+            if (sec > 0)  
+                setTimeout("timeGo();", 0);
+            else  
+                window.location.href = "index.html";  
+        }  
+        timeGo();
+    </script>
 </html>
