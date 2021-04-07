@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <input type="txt" name="" id="txt" value="" />
+    <input type="button" name="" id="btn" value="搜素" />
+    <ul id="list"></ul>
+    <script type="text/javascript">
+    
+        var otxt = document.getElementById("txt");
+        var olist=document.getElementById("list")
+        otxt.oninput=function(){
+            var oscript = document.createElement('script')
+            oscript.src="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+otxt.value+"&cb=data"
+            document.body.appendChild(oscript)
+        }
+        function data(data){
+            data=data.s;
+            var str='';
+            for(var i=0;i<data.length;i++){
+                str+='<li>'+data[i]+'</li>'
+            }
+            document.onkeydown=function(e){
+                var eve = e||event
+                if(eve.keyCode==13){
+                    location.href="https://www.baidu.com/s?wd="+$('#txt').val()
+                }
+            }
+            olist.innerHTML=str;
+            $('li').on('click',function(){
+                $("#txt").val($(this).text())
+            })
+            
+        }
+        $("#btn").click(function(){
+            location.href="https://www.baidu.com/s?wd="+$('#txt').val()
+        })
+        
+    </script>
+</body>
+ 
+</html>
