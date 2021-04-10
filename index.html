@@ -25,6 +25,7 @@
 </head>
 <style>
 body{
+    height: 100%;
     text-align: center
     }
 a{
@@ -59,19 +60,6 @@ script{display: none !important;}
     outline: 0;
     font-size:16.5px;
     }
-ul{
-    display: none;
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 1px;
-    margin: 0 auto;
-    
-    }
-li{
-    text-align: left;
-    margin-left: 1px;
-    margin-top: 3px;
-    }
 .wrapper{
     text-align: center;
     }
@@ -95,9 +83,9 @@ li{
     <span><a href="html/catalog.html" id="a2">音乐</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="http://m.sizhicn.com/bookcase.php" target="_blank" id="a2">小说</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="https://ddrk.me/" target="_blank" id="a2">电影</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="https://www.pixiv.net/"target="_blank" id="a2">插画</a></span>
     <div class="wrapper">
     <form  action="https://baidu.com/s" target="_blank" method="get">
-        <input type="text" name="wd" id="search" placeholder="请输入关键词搜索">
+        <input type="text" baidusug="1" name="wd" id="search" placeholder="请输入关键词搜索">
     </form>
-    <ul></ul>
+    <script charset="gbk" src="http://www.baidu.com/js/opensug.js"></script>
     </div>
     <br>
     <span><a href="https://bbs.nga.cn/" target="_blank" id="a2">nga</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="https://keylol.com/" target="_blank" id="a2">keylol</a></span>
@@ -127,35 +115,6 @@ li{
         Y=new Date();T=(Y.getTime()-X.getTime());M=24*60*60*1000;
         a=T/M;A=Math.floor(a);b=(a-A)*24;B=Math.floor(b);c=(b-B)*60;C=Math.floor((b-B)*60);D=Math.floor((c-C)*60);
         runtime_span.innerHTML="本站已运行: "+A+"天"+B+"小时"+C+"分"+D+"秒"}show_runtime();
-    </script>
-    <script>
-        function ds(data) {
-            console.log(data)
-        }
-        var oInput = document.getElementsByTagName("input")[0];
-        
-        oInput.oninput = function () {
-            var value = this.value;
-            var oScript = document.createElement("script");
-            oScript.src = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+ value +"&cb=doJson&_=1544270132010";
-            document.body.appendChild(oScript);
-            document.body.removeChild(oScript);
-        };
-        
-        function doJson(data) {
-            var s = data.s;
-            $("ul").empty();
-            if(s.length > 0){
-                s.forEach(function (ele,index) {
-                var a = $("<a></a>").attr("href","https://www.baidu.com/s?wd=" + ele);
-                a.text(ele);
-                $("<li></li>").append(a).appendTo($("ul"));
-                });
-                $("ul").css("display","block");
-            }else{
-                $("ul").css("display","none");
-            }
-        }
     </script>
 </body>
 </html>
