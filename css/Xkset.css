@@ -1,3 +1,10 @@
+@media (max-width: 400px){
+    #main{
+    width: 340px;
+    margin: 0 auto;
+     }
+    }
+
 @media (min-width: 700px) {
     .aplayer.aplayer-withlrc .aplayer-pic {
     height: 150px;
@@ -6,7 +13,7 @@
      .aplayer.aplayer-withlrc .aplayer-info {
     margin-left: 150px;
     height: 150px;
-    padding: 10px 0 0;
+    padding: 10px 10px 0;
     position: relative;
      }
     .aplayer .aplayer-info .aplayer-music {
@@ -46,11 +53,78 @@
     user-select: text;
     cursor: default;
      }
-    }
-        
-@media (max-width: 400px){
-    #main{
-    width: 340px;
-    margin: 0 auto;
+    .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap {
+    margin: 0 0 0 5px;
+    padding: 4px 0;
+    cursor: pointer!important;
+    flex: 1;
+     }
+    .aplayer .aplayer-info .aplayer-controller .aplayer-time {
+    position: relative;
+    right: 0;
+    bottom: 3.5px;
+    height: 17px;
+    color: #999;
+    font-size: 11px;
+    padding-left: 7px;
+     }
+    .aplayer .aplayer-icon {
+    width: 30px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    opacity: .8;
+    vertical-align: middle;
+    padding: 0;
+    font-size: 2px;
+    display: inline-block;
+     }
+    .aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap .aplayer-volume-bar {
+    position: absolute;
+    bottom: 0;
+    right: 18px;
+    width: 5px;
+    height: 35px;
+    background: #aaa;
+    border-radius: 2.5px;
+    overflow: hidden;
+     }
+    .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar {
+    position: relative;
+    height: 5px;
+    width: 100%;
+    background: #cdcdcd;
+     }
+    .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #aaa;
+    height: 5px;
+    transition: all .5s ease;
+     }
+    .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 5px;
+     }
+    .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    margin-top: -4px;
+    margin-right: -10px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    -webkit-transform: scale(0);
+    transform: scale(0);
      }
     }
