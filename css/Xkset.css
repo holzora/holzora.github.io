@@ -1,6 +1,51 @@
-#main{
-    width: 950px;
-    margin: 0 auto;
+@media (min-width: 700px) {
+    .aplayer.aplayer-withlrc .aplayer-pic {
+    height: 200px;
+    width: 200px;
+     }
+     .aplayer.aplayer-withlrc .aplayer-info {
+    margin-left: 200px;
+    height: 200px;
+    padding: 10px 0 0;
+    position: relative;
+     }
+    .aplayer .aplayer-info .aplayer-music {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0 0 50px 5px;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    cursor: default;
+    padding-bottom: 2px;
+    height: 20px;
+     }
+    .aplayer .aplayer-lrc {
+    display: none;
+    position: relative;
+    height: 60px;
+    text-align: center;
+    overflow: hidden;
+    margin: -10px 0 7px;
+     }
+    .aplayer .aplayer-info .aplayer-controller {
+    position: relative;
+    top: 30px;
+    display: flex;
+     }
+    .aplayer .aplayer-lrc .aplayer-lrc-contents {
+    width: 100%;
+    position: relative;
+    top: 16px;
+    transition: all .5s ease-out;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    cursor: default;
+     }
     }
         
 @media (max-width: 400px){
