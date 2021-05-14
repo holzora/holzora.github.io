@@ -204,6 +204,14 @@ const ap = new APlayer({
             cover: 'img/bdba.jpg',
             lrc: 'lrc/潘玮柏 _ 弦子 - 不得不爱.lrc',
             theme: '#917D6F'
+        },
+        {
+            name: 'Fireflies',
+            artist: 'Various Artists/Nikki Simmons',
+            url: 'mp3/Various Artists _ Nikki Simmons - Fireflies (Funk Fiction Remix).mp3',
+            cover: 'img/ff.jpg',
+            lrc: 'lrc/Various Artists _ Nikki Simmons - Fireflies (Funk Fiction Remix).lrc',
+            theme: '#FF0000'
         }
     ]
 });
