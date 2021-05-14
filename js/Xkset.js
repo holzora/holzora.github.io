@@ -154,7 +154,7 @@
             url: 'mp3/Reversed Time - 塞壬唱片-MSR.mp3',
             cover: 'img/rt.jpg',
             lrc: 'lrc/am.lrc',
-            theme: '#1AE61A'
+            theme: '#2248DD'
         }
     ]
 });
