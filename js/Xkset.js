@@ -1,4 +1,3 @@
-/*
 function disptime(){  
     var today=new Date();  
     var hh=today.getHours();  
@@ -8,6 +7,7 @@ function disptime(){
      }
     var mytime = setInterval("disptime()",1000);
 
+/*
 function show_runtime(){window.setTimeout("show_runtime()",1000);
     X=new Date("05/14/2021 23:00:00");
     Y=new Date();T=(Y.getTime()-X.getTime());M=24*60*60*1000;
