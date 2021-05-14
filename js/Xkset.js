@@ -147,6 +147,14 @@
             cover: 'img/a.jpg',
             lrc: 'lrc/ALIVE - 塞壬唱片-MSR_Alive Until Sunset.lrc',
             theme: '#1AE61A'
+        },
+        {
+            name: 'Reversed Time',
+            artist: '塞壬唱片',
+            url: 'mp3/Reversed Time - 塞壬唱片-MSR.mp3',
+            cover: 'img/rt.jpg',
+            lrc: 'lrc/am.lrc',
+            theme: '#1AE61A'
         }
     ]
 });
