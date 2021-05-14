@@ -144,7 +144,7 @@
             name: 'Alive',
             artist: '塞壬唱片/Alive Until Sunset',
             url: 'mp3/ALIVE - 塞壬唱片-MSR_Alive Until Sunset.mp3',
-            cover: 'img/a.jpg',
+            cover: 'img/ae.jpg',
             lrc: 'lrc/ALIVE - 塞壬唱片-MSR_Alive Until Sunset.lrc',
             theme: '#1AE61A'
         },
