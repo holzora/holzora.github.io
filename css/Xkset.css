@@ -1,3 +1,5 @@
+    * {padding: 0;margin: 0;list-style: none;}
+    
     .aplayer .aplayer-list::-webkit-scrollbar {
     /*滚动条整体样式*/
     width : 4px;  /*高宽分别对应横竖滚动条的尺寸*/
@@ -58,6 +60,10 @@
     .aplayer.aplayer-withlrc .aplayer-pic {
     height: 150px;
     width: 150px;
+     }
+    #main{
+    width: 94.5%;
+    margin: 0 auto;
      }
      .aplayer.aplayer-withlrc .aplayer-info {
     margin-left: 150px;
@@ -182,13 +188,13 @@
     display: none;
     overflow: hidden;
     overflow-y: scroll;
-    height: 401px;
+    height: 290px;
      }
     .aplayer {
     background: #fff;
     font-family: Arial,Helvetica,sans-serif;
     margin: 5px;
-    top: 5px;
+    top: 89px;
     box-shadow: 0 2px 2px 0 rgb(0 0 0 / 7%), 0 1px 5px 0 rgb(0 0 0 / 10%);
     border-radius: 10px;
     overflow: hidden;
@@ -198,5 +204,45 @@
     user-select: none;
     line-height: normal;
     position: relative;
+     }
+    #header{
+    position: fixed;
+    z-index: 198;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 20px;
+    background: #fff;
+    padding: 16px 1px 16px 1px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 6px #ddd;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+     }
+    #footer{
+    position: relative;
+    top: 125.5px;
+    padding: 20px 30px;
+    border-top: 1px solid #ddd;
+    font-size: 15px;
+    color: #FFf;
+    background-color: #f9f9f9;
+     }
+    #time{
+    text-align: center;
+     }
+    #runtime_span{
+        color: #979898;
+    }
+    .left{
+        float: left;
+        position: relative;
+        left: 45px;
+     }
+    .right{
+        float: right;
+        position: relative;
+        right: 45px;
      }
     }
