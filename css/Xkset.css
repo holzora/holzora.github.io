@@ -237,6 +237,7 @@
     #runtime_span{
         color: #979898;
     }
+    */
     .left{
         float: left;
         position: relative;
@@ -247,5 +248,4 @@
         position: relative;
         right: 45px;
      }
-    */
     }
