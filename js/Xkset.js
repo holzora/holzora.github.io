@@ -118,7 +118,7 @@
         },
         {
             name: 'Speed of Light',
-            artist: '二宮愛/DJ OKAWARI/塞壬唱片',
+            artist: '塞壬唱片/二宮愛/DJ OKAWARI',
             url: 'mp3/塞壬唱片-MSR _ 二宮愛 _ DJ OKAWARI - Speed of Light.mp3',
             cover: 'img/sol.jpg',
             lrc: 'lrc/塞壬唱片-MSR _ 二宮愛 _ DJ OKAWARI - Speed of Light.lrc',
