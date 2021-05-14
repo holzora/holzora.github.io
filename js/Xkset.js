@@ -172,6 +172,22 @@ const ap = new APlayer({
             cover: 'img/rt.jpg',
             lrc: 'lrc/am.lrc',
             theme: '#2248DD'
+        },
+        {
+            name: '月亮代表我的心',
+            artist: '邓丽君',
+            url: 'mp3/邓丽君 - 月亮代表我的心.ogg',
+            cover: 'img/yldbwdx.jpg',
+            lrc: 'lrc/邓丽君 - 月亮代表我的心.lrc',
+            theme: '#94E61A'
+        },
+        {
+            name: '滴答',
+            artist: '侃侃',
+            url: 'mp3/侃侃 - 滴答 (吉他版).mp3',
+            cover: 'img/rt.jpg',
+            lrc: 'lrc/侃侃 - 滴答 (吉他版).lrc',
+            theme: '#573CC4'
         }
     ]
 });
