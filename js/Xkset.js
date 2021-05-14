@@ -188,6 +188,22 @@ const ap = new APlayer({
             cover: 'img/dd.jpg',
             lrc: 'lrc/侃侃 - 滴答 (吉他版).lrc',
             theme: '#573CC4'
+        },
+        {
+            name: '犯贱',
+            artist: '侃侃',
+            url: 'mp3/徐良 - 犯贱.mp3',
+            cover: 'img/fj.jpg',
+            lrc: 'lrc/徐良 - 犯贱.lrc',
+            theme: '#6F7691'
+        },
+        {
+            name: '滴答',
+            artist: '侃侃',
+            url: 'mp3/潘玮柏 _ 弦子 - 不得不爱.mp3',
+            cover: 'img/bdba.jpg',
+            lrc: 'lrc/潘玮柏 _ 弦子 - 不得不爱.lrc',
+            theme: '#917D6F'
         }
     ]
 });
