@@ -74,7 +74,7 @@
             url: 'mp3/大岛满 - Patema Inverse.mp3',
             cover: 'img/pm.jpg',
             lrc: 'lrc/大岛满 - Patema Inverse.lrc',
-            theme: '#96716b'
+            theme: '#D52B91'
         },
         {
             name: '星の在り処',
@@ -82,7 +82,7 @@
             url: 'mp3/う～み - 星の在り処.mp3',
             cover: 'img/xzsz.jpg',
             lrc: 'lrc/う～み - 星の在り処.lrc',
-            theme: '#642386b'
+            theme: '#FFD700'
         },
         {
             name: '2年目の春',
@@ -90,7 +90,7 @@
             url: 'mp3/S.E.N.S. (神思者) - 2年目の春 (第2年的春天).mp3',
             cover: 'img/hxgsn.jpg',
             lrc: 'lrc/am.lrc',
-            theme: '#698386b'
+            theme: '#8B2500'
         },
         {
             name: 'Pearl White Story',
@@ -98,7 +98,7 @@
             url: 'mp3/S.E.N.S. (神思者) - Pearl White Story.mp3',
             cover: 'img/hxgsn.jpg',
             lrc: 'lrc/am.lrc',
-            theme: '#698386b'
+            theme: '#6E6E6E'
         },
         {
             name: '夜空',
@@ -106,7 +106,7 @@
             url: 'mp3/S.E.N.S. (神思者) - 夜空.mp3',
             cover: 'img/hxgsn.jpg',
             lrc: 'lrc/am.lrc',
-            theme: '#698386b'
+            theme: '#EED2EE'
         },
         {
             name: '爽風',
@@ -114,15 +114,15 @@
             url: 'mp3/S.E.N.S. (神思者) - 爽風.mp3',
             cover: 'img/hxgsn.jpg',
             lrc: 'lrc/am.lrc',
-            theme: '#698386b'
+            theme: '#CDAF95'
         },
         {
             name: 'Speed of Light',
-            artist: '二宮愛/DJ OKAWARI',
+            artist: '二宮愛/DJ OKAWARI/塞壬唱片',
             url: 'mp3/塞壬唱片-MSR _ 二宮愛 _ DJ OKAWARI - Speed of Light.mp3',
             cover: 'img/sol.jpg',
             lrc: 'lrc/塞壬唱片-MSR _ 二宮愛 _ DJ OKAWARI - Speed of Light.lrc',
-            theme: '#698386b'
+            theme: '#9AFF9A'
         },
         {
             name: 'Till the Bell Tolls',
@@ -130,7 +130,23 @@
             url: 'mp3/Till the Bell Tolls - 塞壬唱片.mp3',
             cover: 'img/ttbt.jpg',
             lrc: 'lrc/am.lrc',
-            theme: '#698386b'
+            theme: '#8B1A1A'
+        },
+        {
+            name: '秋绪',
+            artist: '塞壬唱片/田井中彩智',
+            url: 'mp3/塞壬唱片-MSR _ 田井中彩智 - 秋绪.mp3',
+            cover: 'img/qx.jpg',
+            lrc: 'lrc/塞壬唱片-MSR _ 田井中彩智 - 秋绪.lrc',
+            theme: '#43CD80'
+        },
+        {
+            name: 'Alive',
+            artist: '塞壬唱片/田井中彩智',
+            url: 'mp3/ALIVE - 塞壬唱片-MSR_Alive Until Sunset.mp3',
+            cover: 'img/a.jpg',
+            lrc: 'lrc/ALIVE - 塞壬唱片-MSR_Alive Until Sunset.lrc',
+            theme: '#1AE61A'
         }
     ]
 });
