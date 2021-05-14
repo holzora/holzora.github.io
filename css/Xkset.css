@@ -221,6 +221,7 @@
     white-space: nowrap;
      }
     #footer{
+    display: none;
     position: relative;
     top: 125.5px;
     padding: 20px 30px;
