@@ -23,6 +23,7 @@
     background   : #ededed;
     border-radius: 4px;
      }
+
 @media (max-width: 400px){
     #main{
     width: 340px;
