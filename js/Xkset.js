@@ -185,7 +185,7 @@ const ap = new APlayer({
             name: '滴答',
             artist: '侃侃',
             url: 'mp3/侃侃 - 滴答 (吉他版).mp3',
-            cover: 'img/rt.jpg',
+            cover: 'img/dd.jpg',
             lrc: 'lrc/侃侃 - 滴答 (吉他版).lrc',
             theme: '#573CC4'
         }
