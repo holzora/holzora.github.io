@@ -123,6 +123,14 @@
             cover: 'img/sol.jpg',
             lrc: 'lrc/塞壬唱片-MSR _ 二宮愛 _ DJ OKAWARI - Speed of Light.lrc',
             theme: '#698386b'
+        },
+        {
+            name: 'Till the Bell Tolls',
+            artist: '塞壬唱片',
+            url: 'mp3/Till the Bell Tolls - 塞壬唱片.mp3',
+            cover: 'img/ttbt.jpg',
+            lrc: 'lrc/am.lrc',
+            theme: '#698386b'
         }
     ]
 });
