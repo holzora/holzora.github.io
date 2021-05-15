@@ -35,7 +35,6 @@ const ap = new APlayer({
             url: 'mp3/Novasonic - 呼啸沙漠.mp3',
             cover: 'img/cabal.jpg',
             lrc: 'lrc/am.lrc',
-            theme: '#ebd0c2'
         },
         {
             name: '黄昏湖畔',
@@ -43,7 +42,6 @@ const ap = new APlayer({
             url: 'mp3/Novasonic - 黄昏湖畔.mp3',
             cover: 'img/cabal.jpg',
             lrc: 'lrc/am.lrc',
-            theme: '#46718b'
         },
         {
             name: '勒克斯港',
@@ -51,7 +49,6 @@ const ap = new APlayer({
             url: 'mp3/Novasonic - 勒克斯港.mp3',
             cover: 'img/cabal.jpg',
             lrc: 'lrc/am.lrc',
-            theme: '#43718b'
         },
         {
             name: '暮色雨林',
@@ -59,7 +56,6 @@ const ap = new APlayer({
             url: 'mp3/Novasonic - 暮色雨林.mp3',
             cover: 'img/cabal.jpg',
             lrc: 'lrc/am.lrc',
-            theme: '#46318b'
         },
         {
             name: '血色冰封',
@@ -67,7 +63,6 @@ const ap = new APlayer({
             url: 'mp3/Novasonic - 血色冰封.mp3',
             cover: 'img/cabal.jpg',
             lrc: 'lrc/am.lrc',
-            theme: '#36718b'
         },
         {
             name: '遗忘废墟',
@@ -75,7 +70,6 @@ const ap = new APlayer({
             url: 'mp3/Novasonic - 遗忘废墟.mp3',
             cover: 'img/cabal.jpg',
             lrc: 'lrc/am.lrc',
-            theme: '#26718b'
         },
         {
             name: 'The Saltwater Room',
@@ -83,7 +77,6 @@ const ap = new APlayer({
             url: 'mp3/The Saltwater Room - Owl City.mp3',
             cover: 'img/trs.png',
             lrc: 'lrc/The Saltwater Room - Owl City.lrc',
-            theme: '#26716b'
         },
         {
             name: 'Patema Inverse',
@@ -91,7 +84,6 @@ const ap = new APlayer({
             url: 'mp3/大岛满 - Patema Inverse.mp3',
             cover: 'img/pm.jpg',
             lrc: 'lrc/大岛满 - Patema Inverse.lrc',
-            theme: '#D52B91'
         },
         {
             name: '星の在り処',
@@ -214,4 +206,29 @@ const ap = new APlayer({
             theme: '#FF0000'
         }
     ]
+});
+
+
+const colorThief = new ColorThief();
+const image = new Image();
+const xhr = new XMLHttpRequest();
+const setTheme = (index) => {
+    if (!ap.list.audios[index].theme) {
+        xhr.onload = function(){
+            let coverUrl = URL.createObjectURL(this.response);
+            image.onload = function(){
+                let color = colorThief.getColor(image);
+                ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
+                URL.revokeObjectURL(coverUrl)
+            };
+            image.src = coverUrl;
+        }
+        xhr.open('GET', ap.list.audios[index].cover, true);
+        xhr.responseType = 'blob';
+        xhr.send();
+    }
+};
+setTheme(ap.list.index);
+ap.on('listswitch', (index) => {
+    setTheme(index);
 });
