@@ -329,6 +329,7 @@
         right: 45px;
      }
     .aplayer .aplayer-lrc p {
+    size: 15px;
     color: #666;
     line-height: 16px!important;
     height: 16px!important;
