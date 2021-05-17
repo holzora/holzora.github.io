@@ -212,6 +212,62 @@ const ap = new APlayer({
             cover: 'img/ff.jpg',
             lrc: 'lrc/Various Artists _ Nikki Simmons - Fireflies (Funk Fiction Remix).lrc',
             theme: '#FF0000'
+        },
+        {
+            name: '少女終末旅行',
+            artist: '末廣健一郎',
+            url: 'mp3/末廣健一郎 - 少女終末旅行 -Main Theme-.mp3',
+            cover: 'img/snzmlx.jpg',
+            lrc: 'lrc/am.lrc',
+            theme: '#006633'
+        },
+        {
+            name: '終ワリノ歌',
+            artist: '末廣健一郎',
+            url: 'mp3/末廣健一郎 - 終ワリノ歌 (终结之歌).mp3',
+            cover: 'img/snzmlx.jpg',
+            lrc: 'lrc/am.lrc',
+            theme: '#CCCCFF'
+        },
+        {
+            name: '挪威的森林',
+            artist: '伍佰',
+            url: 'mp3/伍佰 - 挪威的森林.mp3',
+            cover: 'img/nwdsl.jpg',
+            lrc: 'lrc/伍佰 - 挪威的森林.lrc',
+            theme: '#FFFF66'
+        },
+        {
+            name: '一番の宝物',
+            artist: 'karuta',
+            url: 'mp3/一番の宝物 (Original Version)-karuta.mp3',
+            cover: 'img/ibntm.jpg',
+            lrc: 'lrc/一番の宝物 (Original Version)-karuta.lrc',
+            theme: '#CCCCCC'
+        },
+        {
+            name: '素敌だね',
+            artist: 'Rikki',
+            url: 'mp3/Rikki (中野律纪) - 素敌だね.mp3',
+            cover: 'img/stkdn.jpg',
+            lrc: 'lrc/Rikki (中野律纪) - 素敌だね.lrc',
+            theme: '#48D1CC'
+        },
+        {
+            name: 'Scarborough Fair',
+            artist: '山田タマル',
+            url: 'mp3/Scarborough Fair-山田タマル.mp3',
+            cover: 'img/sf.jpg',
+            lrc: 'lrc/Scarborough Fair-山田タマル.lrc',
+            theme: '#87CEFA'
+        },
+        {
+            name: 'ぶれないアイで',
+            artist: '初音ミク/Mitchie M',
+            url: 'mp3/ぶれないアイで-初音ミク,Mitchie M.mp3',
+            cover: 'img/jdde.jpg',
+            lrc: 'lrc/ぶれないアイで-初音ミク,Mitchie M.lrc',
+            theme: '#FFD700'
         }
     ]
 });
