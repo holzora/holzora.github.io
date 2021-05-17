@@ -339,4 +339,11 @@
     opacity: .4;
     overflow: hidden;
      }
+    .aplayer .aplayer-info .aplayer-music .aplayer-title {
+    font-size: 16px;
+     }
+    .aplayer .aplayer-info .aplayer-music .aplayer-author {
+    font-size: 15px;
+    color: #666;
+     }
     }
