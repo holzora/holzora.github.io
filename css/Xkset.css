@@ -328,4 +328,14 @@
         position: relative;
         right: 45px;
      }
+    .aplayer .aplayer-lrc p {
+    color: #666;
+    line-height: 16px!important;
+    height: 16px!important;
+    padding: 0!important;
+    margin: 0!important;
+    transition: all .5s ease-out;
+    opacity: .4;
+    overflow: hidden;
+     }
     }
