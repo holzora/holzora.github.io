@@ -268,6 +268,14 @@ const ap = new APlayer({
             cover: 'img/jdde.jpg',
             lrc: 'lrc/ぶれないアイで-初音ミク,Mitchie M.lrc',
             theme: '#FFD700'
+        },
+        {
+            name: '瓦妮莎的微笑',
+            artist: 'Richard Clayderman',
+            url: 'mp3/Richard Clayderman - 瓦妮莎的微笑.flac',
+            cover: 'img/wnsdwx.jpg',
+            lrc: 'lrc/am.lrc',
+            theme: '#blue'
         }
     ]
 });
