@@ -278,8 +278,8 @@ const ap = new APlayer({
             theme: '#blue'
         },
         {
-            name: '瓦妮莎的微笑',
-            artist: 'Richard Clayderman',
+            name: 'Far Away from Home',
+            artist: 'Groove Coverage',
             url: 'mp3/Far Away from Home-Groove Coverage.mp3',
             cover: 'img/fafh.jpg',
             lrc: 'lrc/Far Away from Home-Groove Coverage.lrc',
