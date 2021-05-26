@@ -284,6 +284,14 @@ const ap = new APlayer({
             cover: 'img/fafh.jpg',
             lrc: 'lrc/Far Away from Home-Groove Coverage.lrc',
             theme: '#green'
+        },
+        {
+            name: 'Daisy',
+            artist: 'STEREO DIVE FOUNDATION',
+            url: 'mp3/Daisy-STEREO DIVE FOUNDATION.mp3',
+            cover: 'img/d.jpg',
+            lrc: 'lrc/Daisy-STEREO DIVE FOUNDATION.lrc',
+            theme: '#yellow'
         }
     ]
 });
