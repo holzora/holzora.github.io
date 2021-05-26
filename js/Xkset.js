@@ -276,6 +276,14 @@ const ap = new APlayer({
             cover: 'img/wnsdwx.jpg',
             lrc: 'lrc/am.lrc',
             theme: '#blue'
+        },
+        {
+            name: '瓦妮莎的微笑',
+            artist: 'Richard Clayderman',
+            url: 'mp3/Far Away from Home-Groove Coverage.mp3',
+            cover: 'img/fafh.jpg',
+            lrc: 'lrc/Far Away from Home-Groove Coverage.lrc',
+            theme: '#green'
         }
     ]
 });
