@@ -292,6 +292,14 @@ const ap = new APlayer({
             cover: 'img/d.jpg',
             lrc: 'lrc/Daisy-STEREO DIVE FOUNDATION.lrc',
             theme: '#yellow'
+        },
+        {
+            name: '亡灵序曲',
+            artist: 'Masque_Jupiter',
+            url: 'mp3/Masque_Jupiter - 亡灵序曲 (钢琴版).mp3',
+            cover: 'img/wlxq.jpg',
+            lrc: 'lrc/am.lrc',
+            theme: '#white'
         }
     ]
 });
