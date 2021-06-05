@@ -275,7 +275,7 @@ const ap = new APlayer({
             url: 'mp3/Richard Clayderman - 瓦妮莎的微笑.flac',
             cover: 'img/wnsdwx.jpg',
             lrc: 'lrc/am.lrc',
-            theme: '#blue'
+            theme: '#8EE5EE'
         },
         {
             name: 'Far Away from Home',
@@ -283,7 +283,7 @@ const ap = new APlayer({
             url: 'mp3/Far Away from Home-Groove Coverage.mp3',
             cover: 'img/fafh.jpg',
             lrc: 'lrc/Far Away from Home-Groove Coverage.lrc',
-            theme: '#green'
+            theme: '#8B0000'
         },
         {
             name: 'Daisy',
@@ -291,7 +291,7 @@ const ap = new APlayer({
             url: 'mp3/Daisy-STEREO DIVE FOUNDATION.mp3',
             cover: 'img/d.jpg',
             lrc: 'lrc/Daisy-STEREO DIVE FOUNDATION.lrc',
-            theme: '#yellow'
+            theme: '#00EE76'
         },
         {
             name: '亡灵序曲',
@@ -299,7 +299,23 @@ const ap = new APlayer({
             url: 'mp3/Masque_Jupiter - 亡灵序曲 (钢琴版).mp3',
             cover: 'img/wlxq.jpg',
             lrc: 'lrc/am.lrc',
-            theme: '#white'
+            theme: '#00FFFF'
+        },
+        {
+            name: '柠檬',
+            artist: '游助',
+            url: 'mp3/遊助 - 檸檬.mp3',
+            cover: 'img/nm.jpg',
+            lrc: 'lrc/遊助 - 檸檬.lrc',
+            theme: '#BEBEBE'
+        },
+        {
+            name: '君に贈る詩',
+            artist: 'ダフ',
+            url: 'mp3/ダフ - 君に贈る詩.mp3',
+            cover: 'img/knyru.jpg',
+            lrc: 'lrc/ダフ - 君に贈る詩.lrc',
+            theme: '#D2691E'
         }
     ]
 });
