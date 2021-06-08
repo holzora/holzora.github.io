@@ -316,6 +316,14 @@ const ap = new APlayer({
             cover: 'img/knyru.jpg',
             lrc: 'lrc/ダフ - 君に贈る詩.lrc',
             theme: '#D2691E'
+        },
+        {
+            name: '美人鱼',
+            artist: '林俊杰',
+            url: 'mp3/美人鱼 - 林俊杰.ogg',
+            cover: 'img/mry.jpg',
+            lrc: 'lrc/美人鱼 - 林俊杰.lrc',
+            theme: '#0000ff'
         }
     ]
 });
