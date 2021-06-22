@@ -324,6 +324,14 @@ const ap = new APlayer({
             cover: 'img/mry.jpg',
             lrc: 'lrc/美人鱼 - 林俊杰.lrc',
             theme: '#0000ff'
+        },
+        {
+            name: '圣痕',
+            artist: 'セイ',
+            url: 'mp3/Stigmata-Ceui.mp3',
+            cover: 'img/s.jpg',
+            lrc: 'lrc/Stigmata-Ceui.lrc',
+            theme: '#00FFFF'
         }
     ]
 });
