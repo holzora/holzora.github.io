@@ -7,6 +7,8 @@ function disptime(){
      }
     var mytime = setInterval("disptime()",1000);
 
+console.log("\n %c 霍西佐拉 %c https://holzora.com \n","color: #fadfa3; background: #030307; padding:5px 0;","background: #fadfa3; padding:5px 0;");
+
 /*
 function show_runtime(){window.setTimeout("show_runtime()",1000);
     X=new Date("05/14/2021 23:00:00");
