@@ -17,6 +17,14 @@ function show_runtime(){window.setTimeout("show_runtime()",1000);
     runtime_span.innerHTML="本站已运行: "+A+"天"+B+"小时"+C+"分"+D+"秒"}show_runtime();
 */
 
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://music.holzora.com/fx.php";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
 const ap = new APlayer({
     container: document.getElementById('aplayer'),
     mini: false,
