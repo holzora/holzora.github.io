@@ -20,7 +20,7 @@ function show_runtime(){window.setTimeout("show_runtime()",1000);
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "https://music.holzora.com/fx.php";
+  hm.src = "https://stats.holzora.com/mhc/fx.php";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
