@@ -360,7 +360,7 @@ const ap = new APlayer({
             theme: '#CAFF70'
         },
         {
-            name: '遠真夏のフォトグラフ',
+            name: '真夏のフォトグラフ',
             artist: 'Azusa',
             url: 'mp3/Azusa - 真夏のフォトグラフ.mp3',
             cover: 'img/sxdzp.jpg',
